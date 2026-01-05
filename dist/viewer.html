@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Level Layout Viewer</title>
+
+  <!-- ①  Tell the browser what "three" means -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "./libs/build/three.module.js",
+    "three/examples/jsm/": "./libs/examples/jsm/"
+  }
+}
+</script>
+
+
+
+  <style>html,body{margin:0;height:100%;overflow:hidden;background:#111}</style>
+</head>
+<body>
+  <div id="hint"
+       style="position:fixed;top:6px;left:6px;font:14px monospace;color:#fff">
+       LMB orbit | RMB pan | Wheel zoom
+  </div>
+
+  <!-- ②  Load our viewer logic (will import 'three' + OrbitControls) -->
+  <script type="module" src="./viewer.js"></script>
+</body>
+</html>

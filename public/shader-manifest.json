@@ -1,0 +1,11 @@
+{
+  "variants": [
+    "mesh-basic",
+    "mesh-standard",
+    "mesh-phong",
+    "points-basic",
+    "instanced-basic",
+    "sprite-basic"
+  ],
+  "notes": "Used for prewarming and cache identification of shader variants."
+}

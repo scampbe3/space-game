@@ -1,0 +1,14 @@
+{
+  "name": "space_site",
+  "version": "1.0.0",
+  "description": "High-performance Electron wrapper for the web game",
+  "main": "electron-main.js",
+  "scripts": {
+    "start:electron": "electron electron-main.js",
+    "dist:electron": "electron-packager . SpaceGame --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}

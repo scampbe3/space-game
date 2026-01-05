@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Star Cats</title>
+
+  <script type="importmap">
+{
+  "imports": {
+    "three":               "./libs/build/three.module.js",
+    "three/examples/jsm/": "./libs/examples/jsm/"
+  }
+}
+</script>
+
+  <style>
+    html,body{margin:0;height:100%;overflow:hidden;background:#000}
+    canvas#c{width:100vw;height:100vh;display:block}
+    #hud{position:fixed;top:0;left:0;width:100%;padding:4px;
+         font:14px monospace;color:#0f0;pointer-events:none}
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="hud">SCORE 0  ♥♥♥</div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
